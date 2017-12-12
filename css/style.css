@@ -15,6 +15,7 @@ header {
 	width: 100%;
 	position: fixed;
 	height: 80px;
+	z-index: 1;
 }
 #navlogo {
 	font-weight: 700;
@@ -64,8 +65,7 @@ main {
 	width: 100%;
 }
 .aboutcontainer {
-	display: inline-block;
-	margin-left: 5%; 
+	display: inline-block; 
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -78,11 +78,14 @@ main {
 #aboutquote {
 	font-size: 18px;
 }
+#aboutimagecontainer {
+	float: right;
+	width: 45%;
+}
 #aboutusimg {
 	float: right;
-	width: 460px;
+	width: 95%;
 	height: 280px;
-	margin-right: 4%;
 }
 
 
@@ -93,11 +96,21 @@ main {
 .meaningimg {
 	float: left;
 	width: 24%;
+	position: relative;
 }
 .boximage {
 	width: 100%;
 	height: 280px;
 	margin-left: 1%;
+}
+.meaningtitle {
+	padding: 10px;
+	font-size: 24px;
+	color: white;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 200px;
+	right: 0;
 }
 
 
@@ -149,6 +162,13 @@ main {
 	border-radius: 2px;
 }
 
+/***** CONTACT US *****/
+.contactus {
+	background-color: #eee;
+	padding: 50px;
+	text-align: center;
+}
+
 
 /***** FOOTER *****/
 footer {
@@ -164,4 +184,50 @@ footer {
 	text-align: center;
 	font-size: 36px;
 	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+/***** ABOUT US *****/
+	.aboutcontainer {
+		text-align: center; 
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	#aboutustext {
+		width: 100%;
+		font-size: 28px;
+	}
+	#aboutimagecontainer {
+		width: 100%;
+		clear: both;
+	}
+	#aboutusimg {
+		width: 100%;
+		height: 340px;
+	}
+
+/***** EGDI MEANING *****/
+	.meaningimg {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+/***** OUR WORK *****/
+	.youtubevideos {
+		width: 100%;
+		margin-bottom: 20px;
+		clear: both;
+	}
+	.youtubeadjust {
+		height: 400px;
+	}	
+}
+
+@media only screen and (max-width: 620px) {
+	#navlinks {
+		display: none;
+	}
+	.meaningimg {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }

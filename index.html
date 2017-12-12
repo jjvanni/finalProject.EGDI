@@ -4,13 +4,15 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700|Open+Sans" rel="stylesheet"> 
 	<title>projectEGDI</title>
+
+	<!-- Bootsrap CSS styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- CSS styles -->
-	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<!-- NAVBAR -->
-	<header id="navbar"> 
+	<header class="col-xs-12" id="navbar"> 
 		<h1 id="navlogo">EGDI</h1>
 		<div id="navlinks">
 			<a href="#" class="link">About Us</a>
@@ -27,7 +29,7 @@
 	<!-- MAIN -->
 	<main>
 		<!-- ABOUT US -->
-		<div class="aboutus">
+		<div class="container aboutus">
 				<h4>Who We Are?</h4>
 				<h2>About EGDI</h2>
 			<div class="aboutcontainer">	
@@ -40,7 +42,7 @@
 					<span class="highlight">- Charles Dickens</span>	
 					</p>
 				</div>
-				<div>
+				<div id="aboutimagecontainer">
 					<img src="img/AboutPic2.png" id="aboutusimg">	
 				</div>
 			</div>
@@ -49,15 +51,19 @@
 		<div id="meaning">
 			<div class="meaningimg">
 				<img src="img/educate.jpg" class="boximage">
+				<div class="meaningtitle">Educate</div>
 			</div>
 			<div class="meaningimg">
 				<img src="img/grow.jpg" class="boximage">
+				<div class="meaningtitle">Grow</div>
 			</div>
 			<div class="meaningimg">
 				<img src="img/develop.jpg" class="boximage">
+				<div class="meaningtitle">Develop</div>
 			</div>
 			<div class="meaningimg">
 				<img src="img/idea.jpg" class="boximage">
+				<div class="meaningtitle">Innovate</div>
 			</div>
 		</div>
 		<!-- CONTACT BAR -->
@@ -74,22 +80,59 @@
 			</div>
 			<div id="ourworkvideorow">
 				<div class="youtubevideos">
-					<iframe width="100%" height="300" src="https://www.youtube.com/embed/WC0cuPuN-AQ" frameborder="0" allowfullscreen></iframe>
+					<iframe class="youtubeadjust" width="100%" height="300" src="https://www.youtube.com/embed/WC0cuPuN-AQ" frameborder="0" allowfullscreen></iframe>
 					<h3>EGDI Intro</h3>
 				</div>
 				<div class="youtubevideos">
-					<iframe width="100%" height="300" src="https://www.youtube.com/embed/Oe_qGyECubU" frameborder="0" allowfullscreen></iframe>
+					<iframe class="youtubeadjust" width="100%" height="300" src="https://www.youtube.com/embed/Oe_qGyECubU" frameborder="0" allowfullscreen></iframe>
 					<h3>Clothing Drive</h3>
 				</div>
 				<div class="youtubevideos">
-					<iframe width="100%" height="300" src="https://www.youtube.com/embed/ivoRua0O2pk" frameborder="0" allowfullscreen></iframe>
+					<iframe class="youtubeadjust" width="100%" height="300" src="https://www.youtube.com/embed/ivoRua0O2pk" frameborder="0" allowfullscreen></iframe>
 					<h3>Handing Out Food</h3>
 				</div>
 			</div>
 		</div>
+		<!-- Contact Us-->
+		<div class="contactus">
+			<div >
+				<h2>Contact Us</h2>
+				<h3>Have an idea? Let's connect.</h3>
+			</div>
+			<form class="container">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+					  <input type="firstName" class="form-control" id="inputFirstName" placeholder="First Name">
+					</div>
+					<div class="form-group col-md-6">
+					  <input type="lastName" class="form-control" id="inputLastName" placeholder="Last Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputEmail" placeholder="jdoe@example.com">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your idea..."></textarea>
+				</div>
+			</form>
+		</div>	  
 	</main>
 	<footer>
 		<h2 id="footertitle">EGDI</h2>
 	</footer>
+
+	<!-- Javascript -->
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.js"
+  		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  		crossorigin="anonymous"></script>
+  	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	<!-- Bootstrap JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 </body>
 </html>
