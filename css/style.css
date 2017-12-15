@@ -165,9 +165,18 @@ main {
 /***** CONTACT US *****/
 .contactus {
 	background-color: #eee;
-	padding: 50px;
+	padding: 50px 10% 130px 10%;
+	
+}
+#contactustitle {
+	padding-bottom: 30px;
 	text-align: center;
 }
+.btn-lg {
+	float: right;
+	background-color: #1bb275;
+	border-color: #1bb275;
+}	
 
 
 /***** FOOTER *****/
@@ -185,6 +194,7 @@ footer {
 	font-size: 36px;
 	width: 100%;
 }
+
 
 @media only screen and (max-width: 768px) {
 /***** ABOUT US *****/

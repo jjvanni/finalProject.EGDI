@@ -17,7 +17,7 @@
 		<div id="navlinks">
 			<a href="#" class="link">About Us</a>
 			<a href="#" class="link">Our Work</a>
-			<a href="#" class="link">Blog</a>
+			<a href="#" class="link">Contact Us</a>
 		</div>
 	</header>
 
@@ -95,11 +95,11 @@
 		</div>
 		<!-- Contact Us-->
 		<div class="contactus">
-			<div >
+			<div id="contactustitle">
 				<h2>Contact Us</h2>
 				<h3>Have an idea? Let's connect.</h3>
 			</div>
-			<form class="container">
+			<form class="container" action="https://formspree.io/jjvanni2@gmail.com" method="POST">
 				<div class="form-row">
 					<div class="form-group col-md-6">
 					  <input type="firstName" class="form-control" id="inputFirstName" placeholder="First Name">
@@ -109,11 +109,12 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="inputEmail" placeholder="jdoe@example.com">
+					<input type="email" class="form-control" id="inputEmail" name="_replyto" placeholder="jdoe@example.com">
 				</div>
 				<div class="form-group">
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your idea..."></textarea>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write your idea..."></textarea>
 				</div>
+				<button type="submit" value="Send" class="btn btn-secondary btn-lg">Send</button>
 			</form>
 		</div>	  
 	</main>

@@ -1,13 +1,19 @@
 $('.meaningtitle').hide();
 
 $(document).ready(function(){
+	
   	window.sr = ScrollReveal();
 		sr.reveal('#aboutimagecontainer');
 		sr.reveal('#ourworkvideorow');
 
 	
-	$('.meaningimg').hover(function () {
+	$('.meaningimg').mouseenter(function(event) {
 		console.log('works');
-        $('.meaningtitle').slideToggle("slow");
+        $(this).find('.meaningtitle').show();
+    });
+
+    $('.meaningimg').mouseleave(function(event) {
+		console.log('works');
+        $(this).find('.meaningtitle').hide();
     });
 });
