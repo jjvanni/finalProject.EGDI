@@ -103,6 +103,17 @@ main {
 	height: 280px;
 	margin-left: 1%;
 }
+/*.meaningtitle {
+	padding: 10px;
+	font-size: 24px;
+	color: white;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 200px;
+	right: 0;
+}*/
+/***** MEANING ANIMATION *****/
+
 .meaningtitle {
 	padding: 10px;
 	font-size: 24px;
@@ -111,6 +122,63 @@ main {
 	position: absolute;
 	top: 200px;
 	right: 0;
+	opacity: 0;
+	animation-name: fadeFromtop;
+	-webkit-animation-name: fadeFromtop;
+	animation-duration: 800ms;
+	-webkit-animation-duration: 800ms;
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+.meaningimg:hover .meaningtitle {
+	animation-name: fadeFromBottom;
+	-webkit-animation-name: fadeFromBottom;
+	animation-duration: 800ms;
+	-webkit-animation-duration: 800ms;
+	animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fadeFromBottom  {
+        0%{
+            opacity:0;
+            -webkit-transform: translateY(100%);
+            -moz-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+            -o-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 1;
+            -webkit-transform: translateY(0px);
+            -moz-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+            -o-transform: translateY(0px);
+            transform: translateY(0px);
+            display: block;
+        }
+    }
+@keyframes fadeFromtop  {
+    0%{
+        opacity:1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(400%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+    }
 }
 
 

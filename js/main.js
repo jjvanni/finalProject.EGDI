@@ -1,5 +1,3 @@
-$('.meaningtitle').hide();
-
 $(document).ready(function(){
 	
   	window.sr = ScrollReveal();
@@ -7,13 +5,22 @@ $(document).ready(function(){
 		sr.reveal('#ourworkvideorow');
 
 	
-	$('.meaningimg').mouseenter(function(event) {
-		console.log('works');
-        $(this).find('.meaningtitle').show();
-    });
+	$("#aboutuslink").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#aboutus").offset().top
+    }, 2000);
+});
 
-    $('.meaningimg').mouseleave(function(event) {
-		console.log('works');
-        $(this).find('.meaningtitle').hide();
-    });
+	$("#ourworklink").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#ourwork").offset().top
+    }, 2000);
+});
+
+	$("#contactuslink").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".contactus").offset().top
+    }, 2000);
+});
+
 });
